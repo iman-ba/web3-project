@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/bootstrap.css">
+    <link rel="stylesheet" href="./assets/css/sidenav.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+            <a class="navbar-brand " style="margin: 0 16px;" href="#"><img
+                    src="./assets/logo/flat-code-logo-collection_23-2148829940.avif" alt="logo"
+                    style="border: 1px solid transparent;border-radius:50%;width:50px;height:50px;"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"onclick="toggleNav()"
+                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between" id="navbarText">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link text-dark" style="cursor:pointer" onclick="toggleNav()" href="#">OPEN</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="#">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="#">Clients</a>
+                    </li>
+                </ul>
+                <form class="form-inline d-flex">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0 text-dark" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+    </header>
+    <div id="mySidenav" class="sidenav">
+        <!-- <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> -->
+        <li  id='one' onclick="sidenavItemHandler(this)"><a href="./index.html">Home</a></li>
+        <li  id='two' onclick="sidenavItemHandler(this)"><a href="#">products</a>
+            <ul>
+                <a href="digital-products.html">digital products</a>
+                <a href="#">home appliances</a>
+                <a href="#">car accessories</a>
+            </ul>
+        </li>
+        <li  id='three' onclick="sidenavItemHandler(this)"><a href="#">Clients</a>
+            <ul>
+                <a href="#">item001</a>
+                <a href="#">item002</a>
+                <a href="#">item003</a>
+            </ul>
+        </li>
+        <li id='four' onclick="sidenavItemHandler(this)"><a href="./contacts.html">Contact</a></li>
+    </div>
+    <main>
+        <div class="container">
+            <div class=" pt-2 row g-3"id="contacts-page">
+
+            </div>
+        </div>
+    </main>
+    <script src="./assets/js/contact.js"></script>
+    <script src="./assets/js/sidenav.js"></script>
+</body>
+
+</html>

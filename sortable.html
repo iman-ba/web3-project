@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>jQuery UI Sortable - Default functionality</title>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <style>
+
+        div{
+            width: 100%;
+            text-align: center;
+        }
+        #sortable {
+
+            text-align: center;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: grid;
+            grid-template-columns: 112px 112px 112px;
+            grid-template-rows: 95px 95px;
+            grid-gap: 10px;
+        }
+
+        #sortable li {
+            padding: 0.4em;
+            height: 80px;
+            width: 80px;
+        }
+
+        #sortable li img {
+            width: 100%;
+            height: 100%;
+
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script>
+        $(function () {
+            $("#sortable").sortable();
+        });
+</script>
+</head>
+
+<body>
+
+    <div>
+        <ul id="sortable">
+            <li class="ui-state-default"><img src="assets/img/75-754965_digital-devices-icon-png-transparent-png.png">
+            </li>
+            <li class="ui-state-default"><img
+                    src="./assets/img/antigravity-technology-with-elements_23-2148127713.avif">
+            </li>
+            <li class="ui-state-default"><img src="./assets/img/digital-device-mockup-set_53876-90971.avif"></li>
+            <li class="ui-state-default"><img src="./assets/img/digital-device-set_1284-4357.avif"></li>
+            <li class="ui-state-default"><img
+                    src="./assets/img/illustration-digital-devices-collection_53876-5293.avif">
+            </li>
+            <li class="ui-state-default"><img src="./assets/img/images.jpg"></li>
+            <!-- <li class="ui-state-default"><img src="./assets/img/modern-stationary-collection-arrangement_23-2149309649.avif"></li> -->
+        </ul>
+    </div>
+
+
+
+</body>
+
+</html>
